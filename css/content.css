@@ -1,0 +1,12 @@
+header {
+    background: #fffff8;
+    font-size:27px;
+    text-align: center;
+}
+
+.header {
+    background-image: url("../images/sunset.jpg");
+    background-size: cover;
+    background-position: center center;
+    justify-content: flex-end;
+}

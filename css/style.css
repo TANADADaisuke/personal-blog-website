@@ -1,36 +1,4 @@
-body {
-    background: #444;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 250px 600px 300px 150px;
-    grid-template-areas:
-    "hd"
-    "sd"
-    "main"
-    "ft";
-    border: 2px solid aquamarine;
-}
-
-.box {
-    background: #f8fa9d;
-    border: 1px solid red;
-}
-
-.header {
-    grid-area: hd;
-}
-
-.footer {
-    grid-area: ft;
-}
-
-.sidebar {
-    grid-area: sd;
-}
-
-.content {
-    grid-area: main;
-}
+/* Grid Layout */
+@import url("grid.css");
+/* Contents setting */
+@import url("content.css");
