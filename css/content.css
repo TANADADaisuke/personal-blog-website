@@ -20,7 +20,7 @@ header {
 
 /* sidebar styles */
 .sidebar nav {
-    padding: 0 5% 0 5%;
+    padding: 20px;
 }
 .sidebar nav ol {
     list-style: none;
@@ -31,4 +31,39 @@ header {
 .sidebar nav h2 {
     font-size: 100%;
     margin: 0;
+}
+
+/* content styles */
+.content section {
+    padding: 20px;
+}
+
+.content section h3{
+    font-size: 1em;
+    margin: 0;
+}
+
+.post {
+    margin-top: 30px;
+}
+
+.post p {
+    margin: 0;
+}
+
+.post h4 {
+    margin: 0;
+}
+
+.post a {
+    text-decoration: none;
+    color: black;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+time {
+    font-size: 0.8em;
 }
