@@ -67,3 +67,30 @@ header {
 time {
     font-size: 0.8em;
 }
+
+/* footer styles */
+.footer p {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.follow p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.follow img {
+    display: inline-block;
+    width: 42px;
+    margin-right: 10px;
+}
