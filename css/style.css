@@ -2,3 +2,5 @@
 @import url("grid.css");
 /* Contents setting */
 @import url("content.css");
+/* Responsive design */
+@import url("responsive.css")
