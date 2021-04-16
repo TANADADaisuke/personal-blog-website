@@ -1,96 +1,188 @@
-/* header styles */
-header {
-    background: #fffff8;
-    font-size:27px;
-    text-align: center;
-}
-
-.header {
+/* header styles
+ * header element should have background sunset image and
+ * title is placed at the bottom of the element which has
+ * transparent background color.
+ */
+ #header {
     background-image: url("../images/sunset.jpg");
     background-size: cover;
     background-position: center center;
     justify-content: flex-end;
 }
 
-.header h1 {
-    font-size: 100%;
+.blogTitle {
+    background: rgb(127, 255, 212, 0.6);
+    font-size:27px;
+    color: #0ff;
+    text-align: center;
     margin: 0;
 }
 
+/* sidebar styles
+ * navigation content should have a certain space around and
+ * navigation title should have elegant style with rounded corner.
+ * items in navigation list should be displayed with no marker and
+ * have some hover action.
+ */
 
-/* sidebar styles */
-.sidebar nav {
+.sidebar {
     padding: 20px;
-}
-.sidebar nav ol {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+    align-items: start;
 }
 
-.sidebar nav h2 {
-    font-size: 100%;
-    margin: 0;
-}
-
-/* content styles */
-.content section {
-    padding: 20px;
-}
-
-.content section h3{
+.navTitle {
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    background: #444;
+    color: #fffff8;
     font-size: 1em;
     margin: 0;
 }
 
+.navList {
+    list-style: none;
+    padding-left: 5px;
+    margin: 0;
+}
+
+.navList li a{
+    color: #000;
+}
+
+.navList li a:hover {
+    background: #444;
+    opacity: 0.6;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* content styles
+ * content section should have space around and section title
+ * should have elegant style.
+ * each post should have a card style.
+ * date is displayed with small font.
+ * title is normally displayed with no style and underlined when hovered.
+ * figure is displayed to fit the column and figcaption is centerd.
+ */
+.content {
+    padding: 20px;
+}
+
+.contentTitle {
+    font-size: 1em;
+    margin: 0;
+    text-decoration: underline;
+}
+
 .post {
+    background: #fffff8;
+    color: #444;
+    border: 5px solid #444;
+    border-radius: 10px;
     margin-top: 30px;
+    padding: 10px;
+}
+
+.postDate {
+    margin: 0;
+    font-size: 0.8em
+}
+
+.postTitle {
+    margin: 0 0 1em 0;
+}
+
+.postTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.postTitle a:hover {
+    text-decoration: underline;
 }
 
 .post p {
     margin: 0;
 }
 
-.post h4 {
+.post ul {
     margin: 0;
+    padding: 0 1.2em;
 }
 
-.post a {
-    text-decoration: none;
-    color: black;
+.postFigure {
+    margin: 1em 1.5em;
 }
 
-.post a:hover {
-    text-decoration: underline;
+.postFigure img {
+    width: 100%;
 }
 
-time {
-    font-size: 0.8em;
+.postFigure figcaption {
+    font-size: 0.9em;
+    text-align: center;
 }
 
-/* footer styles */
-.footer p {
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+/* footer styles
+ * SNS links should align in one row.
+ * copyright is displayed in center.
+ */
+.footer {
+    align-items: center;
+    border-top: 3px solid green;
 }
 
 .follow {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .follow p {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
-.follow img {
-    display: inline-block;
-    width: 42px;
-    margin-right: 10px;
+.snsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 42px);
+    grid-template-rows: 42px;
+    grid-template-areas:
+    "tw fb ln";
+    grid-gap: 10px;
+}
+
+.snsBox {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#twitter {
+    grid-area: tw;
+    background-image: url("../images/twitter.png");
+}
+
+#facebook {
+    grid-area: fb;
+    background-image: url("../images/facebook.png");
+}
+
+#linkedIn {
+    grid-area: ln;
+    background-image: url("../images/linkedIn.png");
+}
+
+.snsBox a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.copyright {
+    font-size: 0.95em;
+    margin: 0;
 }

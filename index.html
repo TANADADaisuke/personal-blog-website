@@ -7,55 +7,81 @@
     </head>
     <body>
         <!-- Grid Layout is used for container -->
+        <header class="box" id="header">
+            <h1 class="blogTitle">One Step For Tomorrow</h1>
+        </header>
         <div class="container">
-            <div class="header box">
-                <header>
-                    <h1>One Step For Tomorrow</h1>
-                </header>
-            </div>
-            <div class="sidebar box">
+            <section class="sidebar box">
+                <h2 class="navTitle">Recent Posts</h2>
                 <nav>
-                    <h2>Recent Posts</h2>
-                    <ol>
+                    <ol class="navList">
                         <li><a href="#">Learning front end web developing</a></li>
-                        <li><a href="#">Server setup</a></li>
-                        <li><a href="#">Ubuntu installation</a></li>
+                        <li><a href="#">Spring comes</a></li>
+                        <li><a href="#">Winter goes by</a></li>
                     </ol>
-                    <h2>Categories</h2>
-                    <ol>
+                </nav>
+                <h2 class="navTitle">Categories</h2>
+                <nav>
+                    <ol class="navList">
                         <li><a href="#">Uncategorized</a></li>
                     </ol>
                 </nav>
-            </div>
-            <div class="content box">
-                <section>
-                    <h3>Posts</h3>
-                    <article class="post">
-                        <p><time datetime="2021-04-06">April 6, 2021</time></p>
-                        <h4><a href="#">Learning front end web developing</a></h4>
-                        <p>// content comes here.</p>
-                    </article>
-                    <article class="post">
-                        <p><time datetime="2021-04-04">April 4, 2021</time></p>
-                        <h4><a href="#">Server setup</a></h4>
-                        <p>// content comes here.</p>
-                    </article>
-                    <article class="post">
-                        <p><time datetime="2021-03-30">March 30, 2021</time></p>
-                        <h4><a href="#">Ubuntu installation</a></h4>
-                        <p>// content comes here.</p>
-                    </article>
-                </section>
-            </div>
-            <div class="footer box">
+            </section>
+            <section class="content box">
+                <h2 class="contentTitle">Posts</h2>
+                <article class="post">
+                    <p class="postDate"><time datetime="2021-04-06">April 6, 2021</time></p>
+                    <h3 class="postTitle"><a href="#">Learning front end web developing</a></h3>
+                    <p>
+                        Now I'm really interested in Front-end Web developing and start learning about it! The goal of this little journey is to create some wonderful web services. 
+                    </p>
+                    <p>Here are the list of what I want to make.</p>
+                    <ul>
+                        <li><strong>Goods storage assistant</strong> helps you to store several goods together in storage boxes.</li>
+                        <li><strong>English study app</strong> helps you to memorize vocabularies and sentences frequently used in daily business.</li>
+                    </ul>
+                    <p>Look forward to see and use these applications!</p>
+                </article>
+                <article class="post">
+                    <p class="postDate"><time datetime="2021-04-04">March 16, 2021</time></p>
+                    <h3 class="postTitle"><a href="#">Spring comes</a></h3>
+                    <p>
+                        Really beautiful little flowers! Cherry blossoms lets us know that spring comes every year here in Japan.
+                    </p>
+                    <figure class="postFigure">
+                        <img src="images/cherry-blossom.jpg" alt="cherry blossom" />
+                        <figcaption>Cherry blossom lets us know that spring comes.</figcaption>
+                    </figure>
+                </article>
+                <article class="post">
+                    <p class="postDate"><time datetime="2021-03-30">March 3, 2021</time></p>
+                    <h3 class="postTitle"><a href="#">Winter goes by</a></h3>
+                    <p>
+                        Winter goes by and spring is comming! This is the last chance to see the noble appearance of camellia.
+                    </p>
+                    <figure class="postFigure">
+                        <img src="images/camellia.jpg" alt="camellia" />
+                        <figcaption>Camellia flower in winter season.</figcaption>
+                    </figure>
+                </article>
+            </section>
+            <section class="footer box">
                 <div class="follow">
                     <p>Follow me:</p>
-                    <a href="#"><img src="images/twitter.png" alt="twitter icon" /></a>
-                    <a href="#"><img src="images/facebook.png" alt="twitter icon" /></a>
-                    <a href="#"><img src="images/linkedIn.png" alt="twitter icon" /></a>
+                    <div class="snsContainer">
+                        <div class="snsBox" id="twitter">
+                            <a href="#"></a>
+                        </div>
+                        <div class="snsBox" id="facebook">
+                            <a href="#"></a>
+                        </div>
+                        <div class="snsBox" id="linkedIn">
+                            <a href="#"></a>
+                        </div>
+                    </div>
                 </div>
-                <p>&copy;Tanada Daisuke 2021</p>
-            </div>
+                <p class="copyright">&copy;Tanada Daisuke 2021</p>
+            </section>
         </div>
     </body>
 </html>

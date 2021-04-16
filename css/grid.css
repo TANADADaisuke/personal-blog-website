@@ -1,18 +1,28 @@
 body {
     background: #444;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-auto-rows: 150px auto;
+    grid-template-areas:
+    "header"
+    "content";
+    margin: 0;
 }
 
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: minmax(150px, auto);
-    /* grid-template-rows: 150px 600px 300px 150px; */
+    grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
-    "hd"
     "sd"
     "main"
     "ft";
     border: 2px solid aquamarine;
+    grid-area: content;
+}
+
+header {
+    grid-area: header;
 }
 
 .box {
@@ -22,10 +32,6 @@ body {
     justify-content: center;
     background: #f8fa9d;
     border: 1px solid red;
-}
-
-.header {
-    grid-area: hd;
 }
 
 .footer {
