@@ -28,6 +28,7 @@
 .sidebar {
     padding: 20px;
     align-items: start;
+    justify-content: start;
 }
 
 .navTitle {
