@@ -1,3 +1,13 @@
+/* set font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    font-family: 'Dancing Script', cursive;
+}
+
+
 /* header styles
  * header element should have background sunset image and
  * title is placed at the bottom of the element which has
@@ -13,11 +23,12 @@
 
 .blogTitle {
     background: rgb(127, 255, 212, 0.6);
-    font-size:27px;
+    font-size:35px;
     color: #0ff;
     text-align: center;
     margin: 0;
 }
+
 
 /* sidebar styles
  * navigation content should have a certain space around and
@@ -59,6 +70,7 @@
     color: #fff;
     text-decoration: none;
 }
+
 
 /* content styles
  * content section should have space around and section title
@@ -126,6 +138,7 @@
     font-size: 0.9em;
     text-align: center;
 }
+
 
 /* footer styles
  * SNS links should align in one row.
