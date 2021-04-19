@@ -1,0 +1,194 @@
+/* set font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    font-family: 'Dancing Script', cursive;
+}
+
+
+/* header styles
+ * header element should have background sunset image and
+ * title is placed at the bottom of the element which has
+ * transparent background color.
+ */
+ #header {
+    background-image: url("../images/sunset.jpg");
+    background-size: cover;
+    background-position: center center;
+    justify-content: flex-end;
+    border-bottom: 3px solid #444;
+}
+
+.blogTitle {
+    background: rgb(127, 255, 212, 0.6);
+    font-size:35px;
+    color: #0ff;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* feature styles
+ * feature content should have a certain space around and
+ * feature title should have elegant style with rounded corner.
+ * lists should be displayed with no marker and have some hover action.
+ */
+.feature {
+    padding: 20px;
+    align-items: start;
+}
+
+.featureTitle {
+    display: inline;
+    font-size: 1.2em;
+    background: #444;
+    color: #fffff8;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+}
+
+.featLink a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.featLink a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* content styles
+ * content section should have space around and section title
+ * should have elegant style.
+ * each post should have a card style.
+ * date is displayed with small font.
+ * title is normally displayed with no style and underlined when hovered.
+ * figure is displayed to fit the column and figcaption is centerd.
+ */
+.content {
+    padding: 20px;
+}
+
+.contentTitle {
+    font-size: 1em;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.post {
+    background: #fffff8;
+    color: #444;
+    border: 5px solid #444;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.postDate {
+    margin: 0;
+    font-size: 0.8em
+}
+
+.postTitle {
+    margin: 0 0 1em 0;
+}
+
+.postTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.postTitle a:hover {
+    text-decoration: underline;
+}
+
+.post p {
+    margin: 0;
+}
+
+.post ul {
+    margin: 0;
+    padding: 0 1.2em;
+}
+
+.postFigure {
+    margin: 1em 1.5em;
+}
+
+.postFigure img {
+    width: 100%;
+}
+
+.postFigure figcaption {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+/* footer styles
+ * SNS links should align in one row.
+ * copyright is displayed in center.
+ */
+.footer {
+    align-items: center;
+    border-top: 3px solid #444;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.follow p {
+    margin: 0 10px;
+}
+
+.snsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 42px);
+    grid-template-rows: 42px;
+    grid-template-areas:
+    "tw fb ln";
+    grid-gap: 10px;
+}
+
+.snsBox {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#twitter {
+    grid-area: tw;
+    background-image: url("../images/twitter.png");
+}
+
+#facebook {
+    grid-area: fb;
+    background-image: url("../images/facebook.png");
+}
+
+#linkedIn {
+    grid-area: ln;
+    background-image: url("../images/linkedIn.png");
+}
+
+.snsBox a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.copyright {
+    font-size: 0.95em;
+    margin: 0;
+}

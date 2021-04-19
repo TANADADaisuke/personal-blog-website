@@ -16,7 +16,7 @@ body {
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, auto);
     grid-template-areas:
-    "sd"
+    "feat"
     "main"
     "ft";
     border: 2px solid aquamarine;
@@ -40,8 +40,8 @@ header {
     grid-area: ft;
 }
 
-.sidebar {
-    grid-area: sd;
+.feature {
+    grid-area: feat;
 }
 
 .content {
