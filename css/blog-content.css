@@ -229,6 +229,20 @@ body {
     height: 100%;
 }
 
+.homelink {
+    margin: 0;
+}
+
+.homelink a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.homelink a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 .copyright {
     font-size: 0.95em;
     margin: 0;
