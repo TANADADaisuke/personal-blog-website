@@ -126,6 +126,12 @@ body {
     padding: 0 1.2em;
 }
 
+.post blockquote {
+    border-left: 5px solid gray;
+    padding-left: 5px;
+    margin: 5px 0;
+}
+
 .postFigure {
     margin: 1em 1.5em;
 }
