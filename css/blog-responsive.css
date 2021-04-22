@@ -8,6 +8,12 @@
         font-size: 40px;
     }
 
+    .author {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-areas: "pt info";
+    }
+
 }
 
 /* Large Screens */
@@ -27,6 +33,12 @@
 
     .blogTitle {
         font-size: 40px;
+    }
+
+    .author {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-areas: "pt info";
     }
 
 }

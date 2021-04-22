@@ -47,7 +47,42 @@ body {
     color: #fffff8;
     border-radius: 5px;
     padding: 5px;
-    margin: 0;
+    margin: 2px 0;
+}
+
+.author {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(150px, auto);
+    grid-template-areas: "pt" "info";
+    align-items: center;
+    justify-content: center;
+}
+
+.portrait {
+    grid-area: pt;
+    height: 150px;
+    border: 1px solid blue;
+    margin: 0 auto;
+}
+
+.portrait img {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.author-info {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+    height: 100%;
+    border: 1px solid green;
+}
+
+.author-info p {
+    margin: 2px;
 }
 
 .featLink a {
