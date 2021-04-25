@@ -170,7 +170,21 @@ body {
     text-align: center;
 }
 
+.subscribe {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1.5em;
+}
 
+.submit {
+    background: #444;
+    color: #fffff8;
+}
+
+.submit:hover {
+    background: #fffff8;
+    color: #444;
+}
 /* footer styles
  * SNS links should align in one row.
  * copyright is displayed in center.
@@ -235,12 +249,12 @@ body {
 
 .homelink a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .homelink a:hover {
     color: red;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .copyright {
