@@ -38,6 +38,7 @@ body {
 .feature {
     padding: 20px;
     align-items: start;
+    border-bottom: 3px solid #444;
 }
 
 .featureTitle {
@@ -62,7 +63,6 @@ body {
 .portrait {
     grid-area: pt;
     height: 150px;
-    border: 1px solid blue;
     margin: 0 auto;
 }
 
@@ -78,7 +78,6 @@ body {
     align-items: stretch;
     justify-content: flex-end;
     height: 100%;
-    border: 1px solid green;
 }
 
 .author-info p {
@@ -184,7 +183,9 @@ body {
 .submit:hover {
     background: #fffff8;
     color: #444;
+    cursor: pointer;
 }
+
 /* footer styles
  * SNS links should align in one row.
  * copyright is displayed in center.

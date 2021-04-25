@@ -1,6 +1,6 @@
 /* Outer grid should have full width header and responsive content area */
 body {
-    background: #444;
+    background: #f8fa9d;
     display: grid;
     grid-template-columns: 100vw;
     grid-auto-rows: 150px auto;
@@ -19,7 +19,6 @@ body {
     "sd"
     "main"
     "ft";
-    border: 2px solid aquamarine;
     grid-area: content;
 }
 
@@ -32,8 +31,6 @@ header {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    background: #f8fa9d;
-    border: 1px solid red;
 }
 
 .footer {
